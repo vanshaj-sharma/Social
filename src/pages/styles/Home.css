@@ -1,0 +1,37 @@
+.social__box {
+  height: 100vh;
+  background: linear-gradient(to right, #000000 50%, #ffffff 50%);
+}
+.social__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.social__content > img {
+  height: 200px;
+  width: 200px;
+}
+.social__tabs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  margin: 25px;
+}
+.social__tabs > a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+@media only screen and (max-width: 1000px) {
+  .social__tabs > a {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .desktop {
+    display: none;
+  }
+}
