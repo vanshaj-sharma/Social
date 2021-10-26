@@ -11,7 +11,7 @@ function Home() {
             <img src={Logo} alt="Social logo" />
           </div>
           <div className="social__tabs">
-            <NavLink to="/">SERVICES</NavLink>
+            <NavLink to="/services">SERVICES</NavLink>
             <NavLink to="/">OUR WORK</NavLink>
             <NavLink style={{ color: "black" }} to="/">
               CONTACT US
