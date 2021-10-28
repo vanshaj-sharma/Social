@@ -20,14 +20,22 @@
 .left > div {
   margin-left: 2rem;
   margin-top: 4rem;
+  cursor: pointer;
 }
 .right {
   margin: 2rem;
   width: 60%;
 }
-.right > p {
+.right > p,
+li {
+  font-weight: bold;
   margin-left: 2rem;
   margin-top: 2rem;
+}
+/* changing color of ul */
+li::before {
+  content: "• ";
+  color: white;
 }
 @media only screen and (max-width: 720px) {
   .desktop {

@@ -14,20 +14,27 @@ function Services() {
             <div className="left">
               <div></div>
               <div>
-                <h1>BRANDING</h1>
-                <img style={{ paddingLeft: "12px" }} src={arrow} alt="" />
+                <h1 className="link">BRANDING</h1>
+                <img
+                  style={{
+                    height: "20px",
+                    width: "220px",
+                  }}
+                  src={arrow}
+                  alt=""
+                />
               </div>
               <div>
-                <h1>DIGITAL MARKETING</h1>
+                <h1 className="link">DIGITAL MARKETING</h1>
               </div>
               <div>
-                <h1>DESIGNING</h1>
+                <h1 className="link">DESIGNING</h1>
               </div>
               <div>
-                <h1>SOCIAL MEDIA</h1>
+                <h1 className="link">SOCIAL MEDIA</h1>
               </div>
               <div>
-                <h1>PHOTOGRAPHY</h1>
+                <h1 className="link">PHOTOGRAPHY</h1>
               </div>
             </div>
             <div className="right">
@@ -41,6 +48,12 @@ function Services() {
                 ratione soluta, dolores numquam expedita aut esse ipsam ut
                 perspiciatis non totam.
               </p>
+              <li>Logo</li>
+              <li>Logo</li>
+              <li>Logo</li>
+              <li>Logo</li>
+              <li>Logo</li>
+              <li>Logo</li>
             </div>
           </div>
           <div className="social__tabs">
