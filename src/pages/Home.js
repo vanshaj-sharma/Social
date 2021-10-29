@@ -24,6 +24,7 @@ function Home() {
       </div>
       <div className="mobile">
         <h1>Mobile Version</h1>
+        <button className="btn btn-outline-danger">Hello</button>
       </div>
     </>
   );

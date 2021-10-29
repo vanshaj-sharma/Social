@@ -9,28 +9,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100%;
 }
 .social__content > img {
-  height: 200px;
-  width: 200px;
+  padding-left: 9rem;
+  height: 250px;
+  width: 400px;
 }
 .social__tabs {
+  height: 80px;
+  margin-top: -80px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 25px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .social__tabs > a {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
 }
 @media only screen and (max-width: 1000px) {
   .social__tabs > a {
-    font-size: 1.4rem !important;
+    font-size: 1.5rem !important;
   }
 }
 @media only screen and (max-width: 720px) {
