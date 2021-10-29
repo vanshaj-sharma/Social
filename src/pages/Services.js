@@ -51,7 +51,7 @@ function Services() {
             </div>
           </div>
         </div>
-        <div className="social__tabs">
+        <div className="tabs">
           <div></div>
           <NavLink to="/">OUR WORK</NavLink>
           <NavLink to="/">CONTACT US</NavLink>
