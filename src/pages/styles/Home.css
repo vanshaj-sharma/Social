@@ -6,16 +6,7 @@
   background: linear-gradient(to right, #000000 50%, #ffffff 50%);
   animation: transitionDown 0.7s;
 }
-@keyframes transitionDown {
-  from {
-    opacity: 0;
-    transform: translateY(-600px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+
 .social__content {
   display: flex;
   justify-content: center;

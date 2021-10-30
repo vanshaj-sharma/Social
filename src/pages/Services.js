@@ -94,7 +94,7 @@ function Services() {
         <div className="tabs" style={{ animation: "transitionUp 0.9s" }}>
           <div></div>
           <NavLink to="/">OUR WORK</NavLink>
-          <NavLink to="/">CONTACT US</NavLink>
+          <NavLink to="/contact">CONTACT US</NavLink>
           <NavLink to="/">ABOUT US</NavLink>
         </div>
       </div>
