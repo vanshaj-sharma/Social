@@ -6,6 +6,17 @@
   color: white;
   height: 100vh;
   margin-bottom: 12px;
+  animation: transitionUp 0.7s;
+}
+@keyframes transitionUp {
+  from {
+    opacity: 0;
+    transform: translateY(600px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .services__heading > h1 {
   margin-left: 3rem;
