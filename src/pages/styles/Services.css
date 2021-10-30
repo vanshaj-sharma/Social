@@ -14,7 +14,7 @@
   padding-left: 3rem;
 }
 .services__left > h1 {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
   cursor: pointer;
 }
 .link:hover {
@@ -22,6 +22,7 @@
 }
 .services__right {
   height: 80vh;
+  overflow-y: scroll;
 }
 .services__right > p,
 li {
@@ -30,6 +31,7 @@ li {
 }
 @media only screen and (max-width: 1000px) {
   .services__left > h1 {
+    margin-top: 3rem;
     font-size: 2rem !important;
   }
 }
