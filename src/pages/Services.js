@@ -1,7 +1,9 @@
 import "./styles/Services.css";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Services() {
+  const [select, setSelected] = useState("1");
   return (
     <>
       <div className="desktop">
@@ -12,23 +14,48 @@ function Services() {
           <div className="container-fluid">
             <div className="row">
               <div className="col-6 col-lg-4 services__left">
-                <h1>
+                <h1
+                  onClick={() => {
+                    setSelected("1");
+                  }}
+                >
                   <span className="link">BRANDING</span>
                 </h1>
-                <h1>
+                <h1
+                  onClick={() => {
+                    setSelected("2");
+                  }}
+                >
                   <span className="link">DIGITAL MARKETING</span>
                 </h1>
-                <h1>
+                <h1
+                  onClick={() => {
+                    setSelected("3");
+                  }}
+                >
                   <span className="link">DESIGNING</span>
                 </h1>
-                <h1>
+                <h1
+                  onClick={() => {
+                    setSelected("4");
+                  }}
+                >
                   <span className="link">SOCIAL MEDIA</span>
                 </h1>
-                <h1>
+                <h1
+                  onClick={() => {
+                    setSelected("5");
+                  }}
+                >
                   <span className="link">PHOTOGRAPHY</span>
                 </h1>
               </div>
               <div className="col-6 col-lg-8 services__right">
+                {select === "1" && <h1>hello1</h1>}
+                {select === "2" && <h1>hello2</h1>}
+                {select === "3" && <h1>hello3</h1>}
+                {select === "4" && <h1>hello4</h1>}
+                {select === "5" && <h1>hello5</h1>}
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam autem nam fuga, labore culpa molestias unde pariatur
