@@ -22,3 +22,8 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
+@media only screen and (max-width: 1000px) {
+  .tabs > a {
+    font-size: 1.5rem !important;
+  }
+}
