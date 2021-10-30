@@ -21,6 +21,7 @@
   padding-top: 2.5rem;
   padding-left: 3rem;
   font-size: 1.5rem;
+  overflow-x: auto;
 }
 
 td {
@@ -37,12 +38,20 @@ td {
 
 .contact__right {
   height: 80vh;
-  overflow-y: scroll;
 }
 .contact__right > p,
 li {
   font-size: 1rem;
   margin-top: 2rem;
+}
+
+.button {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  height: 60px;
+  width: 200px;
+  font-size: 0.8rem;
+  font-weight: bolder;
 }
 
 @media only screen and (max-width: 720px) {

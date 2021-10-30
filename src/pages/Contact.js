@@ -39,25 +39,10 @@ function Contact() {
                   </tbody>
                 </table>
               </div>
-              <div className="col-6 col-lg-6 contact__right">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam autem nam fuga, labore culpa molestias unde pariatur
-                  similique itaque asperiores praesentium expedita eligendi non.
-                  Magnam odio vel perferendis! Voluptate, veniam. Lorem ipsum
-                  dolor sit amet consectetur, adipisicing elit. Saepe error
-                  accusamus possimus porro in consequatur dicta doloribus quae
-                  ratione soluta, dolores numquam expedita aut esse ipsam ut
-                  perspiciatis non totam.
-                </p>
-                <ul>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                </ul>
+              <div className="col-6 col-lg-6 d-flex flex-column  contact__right">
+                <button className="button">ENQUIRE NOW</button>
+                <button className="button">SCHEDULE A CALL</button>
+                <button className="button">GET DIRECTIONS</button>
               </div>
             </div>
           </div>
