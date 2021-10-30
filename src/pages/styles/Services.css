@@ -6,7 +6,7 @@
   color: white;
   height: 100vh;
   margin-bottom: 12px;
-  animation: transitionUp 0.7s;
+  animation: transitionUp 0.9s;
 }
 @keyframes transitionUp {
   from {
