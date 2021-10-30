@@ -11,14 +11,14 @@ function Contact() {
           <div className="row ">
             <div className="col-3"></div>
             <div className="col-3"></div>
-            <div className="col-3 contact__heading">
+            <div className="col-6 contact__heading">
               <h1>CONTACT US</h1>
             </div>
           </div>
           <div className="container-fluid">
             <div className="row">
               <div className="col-6 col-lg-6 contact__left">
-                <table class="table table-borderless text-light">
+                {/* <table class="table table-borderless text-light">
                   <tbody>
                     <tr>
                       <td className="table__left">ADDRESS</td>
@@ -37,7 +37,15 @@ function Contact() {
                       </td>
                     </tr>
                   </tbody>
-                </table>
+                </table> */}
+                <div className="contact__left__box">
+                  <p>ADDRESS</p>
+                  <p>BK DUTT GATE, AMRITSAR, PUNJAB, IN 143001</p>
+                  <p>PHONE</p>
+                  <p>+91-95014-46674</p>
+                  <p>MAIL</p>
+                  <p>CONTACT@ THEGRAPHIC SOCIAL .COM</p>
+                </div>
               </div>
               <div className="col-6 col-lg-6 d-flex flex-column  contact__right">
                 <button className="button">ENQUIRE NOW</button>

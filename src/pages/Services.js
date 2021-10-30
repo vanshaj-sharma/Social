@@ -1,9 +1,9 @@
 import "./styles/Services.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Services() {
-  const [select, setSelected] = useState("1");
+  const [select, setSelected] = useState("0");
   const activate = (index) => {
     let toggler = document.querySelectorAll(".link");
     toggler[index].classList.toggle("link__active");
@@ -12,6 +12,9 @@ function Services() {
       toggler[i].classList.remove("link__active");
     }
   };
+  useEffect(() => {
+    activate(0);
+  }, []);
   return (
     <>
       <div className="desktop">
@@ -24,7 +27,7 @@ function Services() {
               <div className="col-6 col-lg-4 services__left">
                 <h1
                   onClick={() => {
-                    setSelected("1");
+                    setSelected("0");
                     activate(0);
                   }}
                 >
@@ -32,7 +35,7 @@ function Services() {
                 </h1>
                 <h1
                   onClick={() => {
-                    setSelected("2");
+                    setSelected("1");
                     activate(1);
                   }}
                 >
@@ -40,7 +43,7 @@ function Services() {
                 </h1>
                 <h1
                   onClick={() => {
-                    setSelected("3");
+                    setSelected("2");
                     activate(2);
                   }}
                 >
@@ -48,7 +51,7 @@ function Services() {
                 </h1>
                 <h1
                   onClick={() => {
-                    setSelected("4");
+                    setSelected("3");
                     activate(3);
                   }}
                 >
@@ -56,7 +59,7 @@ function Services() {
                 </h1>
                 <h1
                   onClick={() => {
-                    setSelected("5");
+                    setSelected("4");
                     activate(4);
                   }}
                 >
@@ -64,11 +67,11 @@ function Services() {
                 </h1>
               </div>
               <div className="col-6 col-lg-8 services__right">
-                {select === "1" && <h1>hello1</h1>}
-                {select === "2" && <h1>hello2</h1>}
-                {select === "3" && <h1>hello3</h1>}
-                {select === "4" && <h1>hello4</h1>}
-                {select === "5" && <h1>hello5</h1>}
+                {select === "0" && <h1>hello1</h1>}
+                {select === "1" && <h1>hello2</h1>}
+                {select === "2" && <h1>hello3</h1>}
+                {select === "3" && <h1>hello4</h1>}
+                {select === "4" && <h1>hello5</h1>}
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam autem nam fuga, labore culpa molestias unde pariatur

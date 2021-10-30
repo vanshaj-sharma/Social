@@ -21,10 +21,19 @@
   padding-top: 2.5rem;
   padding-left: 3rem;
   font-size: 1.5rem;
-  overflow-x: auto;
+}
+.contact__left__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact__left__box > p {
+  margin-top: 2rem;
+}
+.contact__left__box > p:nth-child(even) {
+  font-size: 1.3rem;
 }
 
-td {
+/* td {
   padding-top: 4rem !important;
 }
 .table__left {
@@ -34,19 +43,10 @@ td {
   font-size: 1.3rem !important;
   padding-left: 6rem !important;
   padding-right: 3rem !important;
-}
-
-.contact__right {
-  height: 80vh;
-}
-.contact__right > p,
-li {
-  font-size: 1rem;
-  margin-top: 2rem;
-}
+} */
 
 .button {
-  margin-top: 5rem;
+  margin-top: 3.2rem;
   margin-left: 5rem;
   height: 60px;
   width: 200px;
