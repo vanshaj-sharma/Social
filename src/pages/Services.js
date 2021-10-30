@@ -4,6 +4,14 @@ import { NavLink } from "react-router-dom";
 
 function Services() {
   const [select, setSelected] = useState("1");
+  const activate = (index) => {
+    let toggler = document.querySelectorAll(".link");
+    toggler[index].classList.toggle("link__active");
+    for (let i = 0; i < 5; i++) {
+      if (i === index) continue;
+      toggler[i].classList.remove("link__active");
+    }
+  };
   return (
     <>
       <div className="desktop">
@@ -17,6 +25,7 @@ function Services() {
                 <h1
                   onClick={() => {
                     setSelected("1");
+                    activate(0);
                   }}
                 >
                   <span className="link">BRANDING</span>
@@ -24,6 +33,7 @@ function Services() {
                 <h1
                   onClick={() => {
                     setSelected("2");
+                    activate(1);
                   }}
                 >
                   <span className="link">DIGITAL MARKETING</span>
@@ -31,6 +41,7 @@ function Services() {
                 <h1
                   onClick={() => {
                     setSelected("3");
+                    activate(2);
                   }}
                 >
                   <span className="link">DESIGNING</span>
@@ -38,6 +49,7 @@ function Services() {
                 <h1
                   onClick={() => {
                     setSelected("4");
+                    activate(3);
                   }}
                 >
                   <span className="link">SOCIAL MEDIA</span>
@@ -45,6 +57,7 @@ function Services() {
                 <h1
                   onClick={() => {
                     setSelected("5");
+                    activate(4);
                   }}
                 >
                   <span className="link">PHOTOGRAPHY</span>
