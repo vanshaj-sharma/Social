@@ -16,11 +16,6 @@
   height: 250px;
   width: 400px;
 }
-@media only screen and (max-width: 1000px) {
-  .social__tabs > a {
-    font-size: 1.5rem !important;
-  }
-}
 @media only screen and (max-width: 720px) {
   .desktop {
     display: none;
