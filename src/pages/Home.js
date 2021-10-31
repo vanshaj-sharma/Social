@@ -12,7 +12,7 @@ function Home() {
           </div>
           <div className="tabs">
             <NavLink to="/services">SERVICES</NavLink>
-            <NavLink to="/">OUR WORK</NavLink>
+            <NavLink to="/work">OUR WORK</NavLink>
             <NavLink style={{ color: "black" }} to="/contact">
               CONTACT US
             </NavLink>

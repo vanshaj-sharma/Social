@@ -18,26 +18,6 @@ function Contact() {
           <div className="container-fluid">
             <div className="row">
               <div className="col-6 col-lg-6 contact__left">
-                {/* <table class="table table-borderless text-light">
-                  <tbody>
-                    <tr>
-                      <td className="table__left">ADDRESS</td>
-                      <td className="table__right">
-                        BK DUTT GATE, AMRITSAR, PUNJAB, IN 143001
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="table__left">PHONE</td>
-                      <td className="table__right">+91-95014-46674</td>
-                    </tr>
-                    <tr>
-                      <td className="table__left">MAIL</td>
-                      <td className="table__right">
-                        CONTACT@THEGRAPHICSOCIAL.COM
-                      </td>
-                    </tr>
-                  </tbody>
-                </table> */}
                 <div className="contact__left__box">
                   <p>ADDRESS</p>
                   <p>BK DUTT GATE, AMRITSAR, PUNJAB, IN 143001</p>

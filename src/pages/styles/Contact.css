@@ -32,19 +32,6 @@
 .contact__left__box > p:nth-child(even) {
   font-size: 1.3rem;
 }
-
-/* td {
-  padding-top: 4rem !important;
-}
-.table__left {
-  font-size: 2rem !important;
-}
-.table__right {
-  font-size: 1.3rem !important;
-  padding-left: 6rem !important;
-  padding-right: 3rem !important;
-} */
-
 .button {
   margin-top: 3.2rem;
   margin-left: 5rem;
