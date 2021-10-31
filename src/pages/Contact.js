@@ -38,7 +38,7 @@ function Contact() {
 
         <div className="tabs" style={{ animation: "transitionUp 0.9s" }}>
           <NavLink to="/services">SERVICES</NavLink>
-          <NavLink to="/">OUR WORK</NavLink>
+          <NavLink to="/work">OUR WORK</NavLink>
           <div></div>
           <NavLink to="/">ABOUT US</NavLink>
         </div>
