@@ -1,6 +1,11 @@
 import "./styles/Services.css";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import Branding from "./components/services/Branding";
+import DigitalMarketing from "./components/services/DigitalMarketing";
+import Designing from "./components/services/Designing";
+import SocialMedia from "./components/services/SocialMedia";
+import PhotoVideo from "./components/services/PhotoVideo";
 
 function Services() {
   const [select, setSelected] = useState("0");
@@ -67,29 +72,11 @@ function Services() {
                 </h1>
               </div>
               <div className="col-6 col-lg-8 services__right">
-                {select === "0" && <h1>hello1</h1>}
-                {select === "1" && <h1>hello2</h1>}
-                {select === "2" && <h1>hello3</h1>}
-                {select === "3" && <h1>hello4</h1>}
-                {select === "4" && <h1>hello5</h1>}
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam autem nam fuga, labore culpa molestias unde pariatur
-                  similique itaque asperiores praesentium expedita eligendi non.
-                  Magnam odio vel perferendis! Voluptate, veniam. Lorem ipsum
-                  dolor sit amet consectetur, adipisicing elit. Saepe error
-                  accusamus possimus porro in consequatur dicta doloribus quae
-                  ratione soluta, dolores numquam expedita aut esse ipsam ut
-                  perspiciatis non totam.
-                </p>
-                <ul>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                </ul>
+                {select === "0" && <Branding />}
+                {select === "1" && <DigitalMarketing />}
+                {select === "2" && <Designing />}
+                {select === "3" && <SocialMedia />}
+                {select === "4" && <PhotoVideo />}
               </div>
             </div>
           </div>
