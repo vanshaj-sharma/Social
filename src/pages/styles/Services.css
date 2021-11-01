@@ -33,8 +33,9 @@
   border-bottom: 2px solid red !important;
 }
 .services__right {
-  height: 80vh;
+  height: 70vh;
   overflow-y: scroll;
+  margin-top: 2.5rem;
 }
 .services__right > p,
 li {

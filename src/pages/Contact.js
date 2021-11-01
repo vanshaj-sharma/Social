@@ -3,6 +3,11 @@ import "./styles/Contact.css";
 import { NavLink } from "react-router-dom";
 
 function Contact() {
+  const buttonToggle = () => {
+    const toggler = document.querySelector(".button__toggle");
+    toggler.classList.toggle("button__toggle__active");
+  };
+
   return (
     <>
       <div className="desktop">
@@ -28,7 +33,20 @@ function Contact() {
                 </div>
               </div>
               <div className="col-6 col-lg-6 d-flex flex-column  contact__right">
-                <button className="button">ENQUIRE NOW</button>
+                <button className="button" onClick={() => buttonToggle()}>
+                  ENQUIRE NOW
+                </button>
+                <div className="button__toggle">
+                  <a href="tel:+919501446674">
+                    <i className="fas fa-2x fa-phone"></i>
+                  </a>
+                  <a href="mailto:CONTACT@THEGRAPHICSOCIAL.COM">
+                    <i className="far fa-2x fa-envelope"></i>
+                  </a>
+                  <a href="https://wa.me/+919501446674">
+                    <i className="fab fa-2x fa-whatsapp"></i>
+                  </a>
+                </div>
                 <button className="button">SCHEDULE A CALL</button>
                 <button className="button">GET DIRECTIONS</button>
               </div>
