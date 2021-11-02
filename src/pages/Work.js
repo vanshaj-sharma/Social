@@ -1,6 +1,7 @@
 import "./styles/Work.css";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import BrandLogo from "./components/works/BrandLogo";
 
 function Work() {
   const [select, setSelected] = useState("0");
@@ -86,32 +87,13 @@ function Work() {
                 </h1>
               </div>
               <div className="col-6 col-lg-8 work__right">
-                {select === "0" && <h1>hello1</h1>}
+                {select === "0" && <BrandLogo />}
                 {select === "1" && <h1>hello2</h1>}
                 {select === "2" && <h1>hello3</h1>}
                 {select === "3" && <h1>hello4</h1>}
                 {select === "4" && <h1>hello5</h1>}
                 {select === "5" && <h1>hello6</h1>}
                 {select === "6" && <h1>hello7</h1>}
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam autem nam fuga, labore culpa molestias unde pariatur
-                  similique itaque asperiores praesentium expedita eligendi non.
-                  Magnam odio vel perferendis! Voluptate, veniam. Lorem ipsum
-                  dolor sit amet consectetur, adipisicing elit. Saepe error
-                  accusamus possimus porro in consequatur dicta doloribus quae
-                  ratione soluta, dolores numquam expedita aut esse ipsam ut
-                  perspiciatis non totam.
-                </p>
-                <ul>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                  <li>Logo</li>
-                </ul>
               </div>
             </div>
           </div>

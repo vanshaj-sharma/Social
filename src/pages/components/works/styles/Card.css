@@ -1,0 +1,11 @@
+.Card {
+  margin: 10px;
+}
+.card__content {
+  height: 150px;
+  background-color: aliceblue;
+}
+.card__title {
+  padding: 5px;
+  background-color: #ff7675;
+}
