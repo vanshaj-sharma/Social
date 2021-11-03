@@ -58,7 +58,7 @@ function Contact() {
           <NavLink to="/services">SERVICES</NavLink>
           <NavLink to="/work">OUR WORK</NavLink>
           <div></div>
-          <NavLink to="/">ABOUT US</NavLink>
+          <NavLink to="/about">ABOUT US</NavLink>
         </div>
       </div>
 

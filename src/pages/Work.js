@@ -102,7 +102,7 @@ function Work() {
           <NavLink to="/services">SERVICES</NavLink>
           <div></div>
           <NavLink to="/contact">CONTACT US</NavLink>
-          <NavLink to="/">ABOUT US</NavLink>
+          <NavLink to="/about">ABOUT US</NavLink>
         </div>
       </div>
       <div className="mobile">

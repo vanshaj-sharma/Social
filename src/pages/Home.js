@@ -16,7 +16,7 @@ function Home() {
             <NavLink style={{ color: "black" }} to="/contact">
               CONTACT US
             </NavLink>
-            <NavLink style={{ color: "black" }} to="/">
+            <NavLink style={{ color: "black" }} to="/about">
               ABOUT US
             </NavLink>
           </div>

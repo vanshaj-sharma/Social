@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap%27");
+
+.mobile {
+  display: none;
+}
+
+.about__box {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  margin-bottom: 12px;
+  animation: transitionUp 0.9s;
+}
+
+.about__heading > h1 {
+  margin-left: 7rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+.about__left {
+  padding-top: 2.5rem;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+}
+.about__left > p {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.button {
+  margin-top: 3.2rem;
+  margin-left: 14rem;
+  height: 60px;
+  width: 200px;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+@keyframes toggleTransitionDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@media only screen and (max-width: 720px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}

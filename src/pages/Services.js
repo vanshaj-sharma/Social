@@ -85,7 +85,7 @@ function Services() {
           <div></div>
           <NavLink to="/work">OUR WORK</NavLink>
           <NavLink to="/contact">CONTACT US</NavLink>
-          <NavLink to="/">ABOUT US</NavLink>
+          <NavLink to="/about">ABOUT US</NavLink>
         </div>
       </div>
       <div className="mobile">

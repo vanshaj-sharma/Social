@@ -4,6 +4,7 @@ import Home from "./pages/Home.js";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Work from "./pages/Work";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route exact path="/services" component={Services} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/work" component={Work} />
+      <Route exact path="/about" component={About} />
     </Switch>
   );
 }
