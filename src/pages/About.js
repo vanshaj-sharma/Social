@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Team from "./components/about/Team.js";
 import "./styles/About.css";
 
 function About() {
@@ -18,7 +19,7 @@ function About() {
           </div>
           <div className="container-fluid">
             <div className="row">
-              <div className="col-8 col-lg-8 about__left">
+              <div id="mcon" className="col-8 col-lg-8 about__left">
                 <p>
                   We are a digital agency. We deal with almost everything
                   starting from influencer marketing, designing, social media,
@@ -40,13 +41,20 @@ function About() {
                   bring about a difference. This lets us keep our vision for
                   each brand straight without clutter or confusion.
                 </p>
+                <hr />
+                <div id="team">
+                  <Team />
+                </div>
               </div>
 
               <div className="col-4 col-lg-4 d-flex flex-column  about__right">
-                <button className="button">TEAM</button>
-                <div className="button__toggle">{/*  */}</div>
-                <button className="button">CLIENTLE</button>
-                <div className="button__toggle">{/*  */}</div>
+                <a href="#team" className="button">
+                  TEAM
+                </a>
+
+                <a href="#clientle" className="button">
+                  CLIENTLE
+                </a>
               </div>
             </div>
           </div>

@@ -22,7 +22,9 @@
 .about__left {
   padding-top: 2.5rem;
   padding-left: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  overflow-y: scroll;
+  height: 70vh;
 }
 .about__left > p {
   font-family: "Open Sans", sans-serif !important;

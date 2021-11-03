@@ -1,0 +1,11 @@
+/* Photos */
+.Photos {
+  margin: 10px;
+  /* height: 200px; */
+  /* width: 300px; */
+}
+.Photos__content {
+  width: 250px;
+  height: 250px;
+  background-color: aliceblue;
+}
