@@ -1,11 +1,14 @@
 /* Photos */
 .Photos {
-  margin: 10px;
+  /* margin: 10px; */
   /* height: 200px; */
   /* width: 300px; */
 }
 .Photos__content {
+  margin-left: 1rem;
   width: 250px;
-  height: 250px;
+  height: 200px;
   background-color: aliceblue;
+}
+.Photos__content > h6 {
 }
