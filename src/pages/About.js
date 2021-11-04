@@ -10,16 +10,14 @@ function About() {
         {/* lower shit show */}
         <div className="about__box">
           <div className="row ">
-            <div className="col-3"></div>
-            <div className="col-3"></div>
-            <div className="col-3"></div>
-            <div className="col-3 about__heading">
+            <div className="col-7 col-lg-9"></div>
+            <div className="col-5 col-lg-3 about__heading">
               <h1>ABOUT US</h1>
             </div>
           </div>
           <div className="container-fluid">
             <div className="row">
-              <div id="mcon" className="col-8 col-lg-8 about__left">
+              <div id="mcon" className="col-7 col-lg-9 about__left">
                 <p>
                   We are a digital agency. We deal with almost everything
                   starting from influencer marketing, designing, social media,
@@ -47,14 +45,14 @@ function About() {
                 </div>
               </div>
 
-              <div className="col-4 col-lg-4 d-flex flex-column  about__right">
-                <a href="#team" className="button">
-                  TEAM
-                </a>
+              <div className="col-5 col-lg-3 d-flex flex-column  about__right">
+                <button className="button">
+                  <a href="#team">TEAM</a>
+                </button>
 
-                <a href="#clientle" className="button">
-                  CLIENTLE
-                </a>
+                <button className="button">
+                  <a href="#clientle">CLIENTLE</a>
+                </button>
               </div>
             </div>
           </div>
@@ -63,7 +61,7 @@ function About() {
         <div
           className="tabs"
           style={{
-            paddingLeft: "1rem",
+            paddingRight: "10rem",
             animation: "transitionUp 0.9s",
           }}
         >

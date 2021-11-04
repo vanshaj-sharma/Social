@@ -1,8 +1,7 @@
-/* Photos */
 .Photos {
-  /* margin: 10px; */
+  margin: 10px;
   /* height: 200px; */
-  /* width: 300px; */
+  width: 15rem;
 }
 .Photos__content {
   margin-left: 1rem;
@@ -10,5 +9,8 @@
   height: 200px;
   background-color: aliceblue;
 }
-.Photos__content > h6 {
+.team__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
