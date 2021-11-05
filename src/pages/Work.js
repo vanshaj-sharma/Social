@@ -35,7 +35,7 @@ function Work() {
                     activate(0);
                   }}
                 >
-                  <span className="link">BRAND LOGOs</span>
+                  <span className="link">BRANDING</span>
                 </h1>
                 <h1
                   onClick={() => {

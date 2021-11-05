@@ -17,7 +17,7 @@ function About() {
           </div>
           <div className="container-fluid">
             <div className="row">
-              <div id="mcon" className="col-7 col-lg-9 about__left">
+              <div className="col-7 col-lg-9 about__left ">
                 <p>
                   We are a digital agency. We deal with almost everything
                   starting from influencer marketing, designing, social media,

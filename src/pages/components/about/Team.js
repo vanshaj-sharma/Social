@@ -6,9 +6,11 @@ function Photos() {
   return (
     <>
       <div className="Photos col-md-3">
-        <img className="Photos__content img-fluid" src={test} alt="" />
-        <div className="Photos__title text-center">
-          <h6>name1</h6>
+        <div className="d-flex justify-content-center">
+          <img className="Photos__content img-fluid" src={test} alt="" />
+        </div>
+        <div className="Photos__title mt-2">
+          <h5 className="text-center pl-3">name1</h5>
         </div>
       </div>
     </>
