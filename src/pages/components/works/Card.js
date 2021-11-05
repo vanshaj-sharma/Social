@@ -8,7 +8,11 @@ function Card({ pdf, title }) {
         </div>
         <div className="card__title d-flex justify-content-center">
           <h4>
-            <a href={pdf} style={{ textDecoration: "none", color: "white" }}>
+            <a
+              target="__blank"
+              href={pdf}
+              style={{ textDecoration: "none", color: "white" }}
+            >
               {title}
             </a>
           </h4>
