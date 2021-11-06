@@ -12,7 +12,7 @@ function Services() {
   const activate = (index) => {
     let toggler = document.querySelectorAll(".link");
     toggler[index].classList.toggle("link__active");
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
       if (i === index) continue;
       toggler[i].classList.remove("link__active");
     }
@@ -52,7 +52,7 @@ function Services() {
                     activate(2);
                   }}
                 >
-                  <span className="link">DESIGNING</span>
+                  <span className="link">INFLUENCER MARKETING</span>
                 </h1>
                 <h1
                   onClick={() => {
@@ -60,12 +60,20 @@ function Services() {
                     activate(3);
                   }}
                 >
-                  <span className="link">SOCIAL MEDIA</span>
+                  <span className="link">DESIGNING</span>
                 </h1>
                 <h1
                   onClick={() => {
                     setSelected("4");
                     activate(4);
+                  }}
+                >
+                  <span className="link">SOCIAL MEDIA</span>
+                </h1>
+                <h1
+                  onClick={() => {
+                    setSelected("5");
+                    activate(5);
                   }}
                 >
                   <span className="link">PHOTOGRAPHY</span>
@@ -74,9 +82,10 @@ function Services() {
               <div className="col-6 col-lg-8 services__right">
                 {select === "0" && <Branding />}
                 {select === "1" && <DigitalMarketing />}
-                {select === "2" && <Designing />}
-                {select === "3" && <SocialMedia />}
-                {select === "4" && <PhotoVideo />}
+                {select === "2" && <h1>Influeencer</h1>}
+                {select === "3" && <Designing />}
+                {select === "4" && <SocialMedia />}
+                {select === "5" && <PhotoVideo />}
               </div>
             </div>
           </div>
