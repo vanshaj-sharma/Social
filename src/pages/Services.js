@@ -27,6 +27,11 @@ function Services() {
           <div className="services__heading">
             <h1>SERVICES</h1>
           </div>
+          <div className="back__logo">
+            <NavLink to="/">
+              <i class="fas fa-3x fa-anchor"></i>
+            </NavLink>
+          </div>
           <div className="container-fluid">
             <div className="row">
               <div className="col-6 col-lg-4 services__left">
@@ -91,6 +96,9 @@ function Services() {
           </div>
         </div>
         <div className="tabs" style={{ animation: "transitionUp 0.9s" }}>
+          {/* <NavLink to="/">
+            <i class="fab fa-slack"></i> <span></span> HOME
+          </NavLink> */}
           <div></div>
           <NavLink to="/work">OUR WORK</NavLink>
           <NavLink to="/contact">CONTACT US</NavLink>

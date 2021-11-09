@@ -28,6 +28,11 @@ function About() {
               <h1>ABOUT US</h1>
             </div>
           </div>
+          <div className="back__logo">
+            <NavLink to="/">
+              <i className="fab fa-3x fa-slack"></i>
+            </NavLink>
+          </div>
           <div className="container-fluid">
             <div className="row">
               <div className="col-7 col-lg-9 about__left">
@@ -86,6 +91,7 @@ function About() {
           <NavLink to="/services">SERVICES</NavLink>
           <NavLink to="/work">OUR WORK</NavLink>
           <NavLink to="/contact">CONTACT US</NavLink>
+
           <div></div>
         </div>
       </div>

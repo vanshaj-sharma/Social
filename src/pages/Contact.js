@@ -20,6 +20,11 @@ function Contact() {
               <h1>CONTACT US</h1>
             </div>
           </div>
+          <div className="back__logo">
+            <NavLink to="/">
+              <i class="fas fa-3x fa-arrow-right"></i>
+            </NavLink>
+          </div>
           <div className="container-fluid">
             <div className="row">
               <div className="col-6 col-lg-6 contact__left">

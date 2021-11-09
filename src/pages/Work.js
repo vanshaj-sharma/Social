@@ -26,6 +26,11 @@ function Work() {
               <h1>OUR WORK</h1>
             </div>
           </div>
+          <div className="back__logo">
+            <NavLink to="/">
+              <i class="fas fa-3x fa-arrow-circle-right"></i>
+            </NavLink>
+          </div>
           <div className="container-fluid">
             <div className="row">
               <div className="col-6 col-lg-4 work__left">

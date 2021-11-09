@@ -55,6 +55,16 @@ ul li:before {
   color: #ffffff;
   text-decoration: none;
 }
+
+.back__logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.back__logo > a {
+  color: white;
+}
+
 /* Scrollbar beautifying */
 ::-webkit-scrollbar {
   width: 20px;
