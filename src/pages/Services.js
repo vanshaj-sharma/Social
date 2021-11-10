@@ -6,6 +6,7 @@ import DigitalMarketing from "./components/services/DigitalMarketing";
 import Designing from "./components/services/Designing";
 import SocialMedia from "./components/services/SocialMedia";
 import PhotoVideo from "./components/services/PhotoVideo";
+import mbServices from "./mobile/mbServices";
 
 function Services() {
   const [select, setSelected] = useState("0");
@@ -106,9 +107,7 @@ function Services() {
           <NavLink to="/about">ABOUT US</NavLink>
         </div>
       </div>
-      <div className="mobile">
-        <h1>Mobile Version</h1>
-      </div>
+      <div className="mobile">{mbServices()}</div>
     </>
   );
 }

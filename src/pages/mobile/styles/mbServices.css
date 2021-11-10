@@ -1,0 +1,24 @@
+@media only screen and (max-width: 720px) {
+  .s_title {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .s_headings {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
+  .s_headings > a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+  }
+}
