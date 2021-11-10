@@ -26,11 +26,11 @@ function Work() {
               <h1>OUR WORK</h1>
             </div>
           </div>
-          <div className="back__logo">
+          {/* <div className="back__logo">
             <NavLink to="/">
               <i class="fas fa-3x fa-arrow-circle-right"></i>
             </NavLink>
-          </div>
+          </div> */}
           <div className="container-fluid">
             <div className="row">
               <div className="col-6 col-lg-4 work__left">
@@ -105,7 +105,11 @@ function Work() {
         </div>
         <div className="tabs" style={{ animation: "transitionUp 0.9s" }}>
           <NavLink to="/services">SERVICES</NavLink>
-          <div></div>
+          <div className="d-flex justify-content-center">
+            <NavLink to="/" className="text-light">
+              <i className="fas fa-2x fa-times"></i>
+            </NavLink>
+          </div>
           <NavLink to="/contact">CONTACT US</NavLink>
           <NavLink to="/about">ABOUT US</NavLink>
         </div>

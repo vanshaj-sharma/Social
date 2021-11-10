@@ -21,7 +21,7 @@ function Team() {
   return (
     <>
       <div className="container">
-        <h3 className="text-center">Our Team</h3>
+        <h3 className="text-center">OUR TEAM</h3>
         <div className="team__container">
           <Photos />
           <Photos />

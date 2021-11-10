@@ -4,7 +4,7 @@ function Card({ pdf, title }) {
     <>
       <div className="Card">
         <div className="card__content">
-          <iframe src={pdf + "#toolbar=0"} />
+          <iframe title="pdf" src={pdf + "#toolbar=0"} />
         </div>
         <div className="card__title d-flex justify-content-center">
           <h4>

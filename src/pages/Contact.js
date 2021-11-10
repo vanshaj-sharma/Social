@@ -20,11 +20,11 @@ function Contact() {
               <h1>CONTACT US</h1>
             </div>
           </div>
-          <div className="back__logo">
+          {/* <div className="back__logo">
             <NavLink to="/">
               <i class="fas fa-3x fa-arrow-right"></i>
             </NavLink>
-          </div>
+          </div> */}
           <div className="container-fluid">
             <div className="row">
               <div className="col-6 col-lg-6 contact__left">
@@ -62,7 +62,11 @@ function Contact() {
         <div className="tabs" style={{ animation: "transitionUp 0.9s" }}>
           <NavLink to="/services">SERVICES</NavLink>
           <NavLink to="/work">OUR WORK</NavLink>
-          <div></div>
+          <div className="d-flex justify-content-center">
+            <NavLink to="/" className="text-light">
+              <i className="pr-5 fas fa-2x fa-times"></i>
+            </NavLink>
+          </div>
           <NavLink to="/about">ABOUT US</NavLink>
         </div>
       </div>

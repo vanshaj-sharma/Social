@@ -27,11 +27,11 @@ function Services() {
           <div className="services__heading">
             <h1>SERVICES</h1>
           </div>
-          <div className="back__logo">
+          {/* <div className="back__logo">
             <NavLink to="/">
               <i class="fas fa-3x fa-anchor"></i>
             </NavLink>
-          </div>
+          </div> */}
           <div className="container-fluid">
             <div className="row">
               <div className="col-6 col-lg-4 services__left">
@@ -96,10 +96,11 @@ function Services() {
           </div>
         </div>
         <div className="tabs" style={{ animation: "transitionUp 0.9s" }}>
-          {/* <NavLink to="/">
-            <i class="fab fa-slack"></i> <span></span> HOME
-          </NavLink> */}
-          <div></div>
+          <div className="d-flex justify-content-center">
+            <NavLink to="/" className="text-light">
+              <i className="pl-5 fas fa-2x fa-times"></i>
+            </NavLink>
+          </div>
           <NavLink to="/work">OUR WORK</NavLink>
           <NavLink to="/contact">CONTACT US</NavLink>
           <NavLink to="/about">ABOUT US</NavLink>
