@@ -5,6 +5,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Work from "./pages/Work";
 import About from "./pages/About";
+import mbBranding from "./pages/mobile/components/Branding";
 
 function App() {
   return (

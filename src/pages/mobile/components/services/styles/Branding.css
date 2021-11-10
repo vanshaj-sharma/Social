@@ -1,0 +1,8 @@
+@media only screen and (max-width: 720px) {
+  .s_brand {
+    color: white;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+  }
+}
