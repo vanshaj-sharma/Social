@@ -107,7 +107,7 @@ function Work() {
           <NavLink to="/services">SERVICES</NavLink>
           <div className="d-flex justify-content-center">
             <NavLink to="/" className="text-light">
-              <i className="fas fa-2x fa-times"></i>
+              <i className="pr-5 fas fa-2x fa-times"></i>
             </NavLink>
           </div>
           <NavLink to="/contact">CONTACT US</NavLink>
