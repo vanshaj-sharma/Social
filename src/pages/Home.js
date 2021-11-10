@@ -1,6 +1,7 @@
 import "./styles/Home.css";
 import Logo from "./assets/logo.png";
 import { NavLink } from "react-router-dom";
+import mbHome from "./mobile/mbHome";
 
 function Home() {
   return (
@@ -22,10 +23,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="mobile">
-        <h1>Mobile Version</h1>
-        <button className="btn btn-outline-danger">Hello</button>
-      </div>
+      <div className="mobile">{mbHome()}</div>
     </>
   );
 }
