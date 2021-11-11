@@ -1,10 +1,28 @@
-function mbPhotoVideo() {
+function PhotoVideo() {
+  const goBack = () => {
+    let menu = document.querySelector(".menu__deactivate");
+    let menuContent = document.querySelector(".menu__content");
+    menu.className = "menu";
+    menuContent.className += " menu__deactivate";
+  };
   return (
     <>
-      <div>
+      <div className="brand__box">
         <h1 className="s_title">SERVICES</h1>
         <div className="s_brand">
-          <h1>Photo and Video</h1>
+          <div className="row">
+            <div className="col-11">
+              <h1>Photo and Video </h1>
+            </div>
+            <div className="col-1">
+              <i
+                onClick={() => {
+                  goBack();
+                }}
+                className="pl-5 text-center fas  fa-times"
+              ></i>
+            </div>
+          </div>
           <p>
             Photography is an art of capturing the what we see on to a film/
             digital reel. It’s not just pointing the camera at something and
@@ -32,4 +50,4 @@ function mbPhotoVideo() {
     </>
   );
 }
-export default mbPhotoVideo;
+export default PhotoVideo;
