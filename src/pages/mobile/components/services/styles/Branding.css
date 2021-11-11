@@ -5,4 +5,8 @@
     margin-top: 3rem;
     font-size: 1rem;
   }
+  .brand__box {
+    height: 100vh;
+    overflow-y: scroll;
+  }
 }
