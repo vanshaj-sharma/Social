@@ -5,12 +5,15 @@
     margin-top: 3rem;
     font-size: 1rem;
   }
-  .cross {
-    margin-top: 0.5rem;
-  }
-
   .brand__box {
     height: 100vh;
     overflow-y: scroll;
+    animation: animate__service ease-in-out 1.5s;
+  }
+  .box {
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

@@ -10,18 +10,14 @@ function PhotoVideo() {
       <div className="brand__box">
         <h1 className="s_title">SERVICES</h1>
         <div className="s_brand">
-          <div className="row">
-            <div className="col-10 ">
-              <h1>Photo and Video </h1>
-            </div>
-            <div className="col-2 cross">
-              <i
-                onClick={() => {
-                  goBack();
-                }}
-                className="pl-5 text-center fas  fa-times"
-              ></i>
-            </div>
+          <div className="box">
+            <h1>Photo and Video </h1>
+            <i
+              onClick={() => {
+                goBack();
+              }}
+              className=" text-center fas  fa-times"
+            ></i>
           </div>
           <p>
             Photography is an art of capturing the what we see on to a film/

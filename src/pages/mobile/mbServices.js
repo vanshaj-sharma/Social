@@ -5,6 +5,7 @@ import Designing from "./components/services/Designing";
 import SocialM from "./components/services/SocialM";
 import PhotoVideo from "./components/services/PhotoVideo";
 import InfluentialM from "./components/services/InfluentialM";
+import DigitalM from "./components/services/DigitalM";
 function MbServices() {
   const [select, setSelected] = useState("");
   const activate = () => {
@@ -58,6 +59,14 @@ function MbServices() {
           >
             PHOTOGRAPHY
           </h1>
+          <h1
+            onClick={() => {
+              setSelected("5");
+              activate();
+            }}
+          >
+            DIGITAL MARKETING
+          </h1>
         </div>
       </div>
       <div className="menu__content">
@@ -66,6 +75,7 @@ function MbServices() {
         {select === "2" && <Designing />}
         {select === "3" && <SocialM />}
         {select === "4" && <PhotoVideo />}
+        {select === "5" && <DigitalM />}
       </div>
     </>
   );

@@ -23,4 +23,15 @@
   .menu__deactivate {
     display: none;
   }
+  .menu {
+    animation: animate__service ease-in-out 1.5s;
+  }
+  @keyframes animate__service {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }

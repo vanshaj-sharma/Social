@@ -10,18 +10,14 @@ function Designing() {
       <div className="brand__box">
         <h1 className="s_title">SERVICES</h1>
         <div className="s_brand">
-          <div className="row">
-            <div className="col-10">
-              <h1>Designing</h1>
-            </div>
-            <div className="col-2 cross">
-              <i
-                onClick={() => {
-                  goBack();
-                }}
-                className="pl-5 text-center fas  fa-times"
-              ></i>
-            </div>
+          <div className="box">
+            <h1>Designing</h1>
+            <i
+              onClick={() => {
+                goBack();
+              }}
+              className="  text-center fas  fa-times"
+            ></i>
           </div>
           <p>
             A good design can go a long way in defining your brand image and how
