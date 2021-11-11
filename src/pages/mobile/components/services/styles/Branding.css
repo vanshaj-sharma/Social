@@ -5,6 +5,10 @@
     margin-top: 3rem;
     font-size: 1rem;
   }
+  .cross {
+    margin-top: 0.5rem;
+  }
+
   .brand__box {
     height: 100vh;
     overflow-y: scroll;

@@ -12,15 +12,15 @@ function Branding() {
         <h1 className="s_title">SERVICES</h1>
         <div className="s_brand">
           <div className="row">
-            <div className="col-11">
+            <div className="col-10">
               <h1>Branding</h1>
             </div>
-            <div className="col-1">
+            <div className="col-2 cross">
               <i
                 onClick={() => {
                   goBack();
                 }}
-                className="pl-5 text-center fas  fa-times"
+                className=" pl-5 text-center fas  fa-times"
               ></i>
             </div>
           </div>

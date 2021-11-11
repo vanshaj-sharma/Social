@@ -11,10 +11,10 @@ function SocialM() {
         <h1 className="s_title">SERVICES</h1>
         <div className="s_brand">
           <div className="row">
-            <div className="col-11">
+            <div className="col-10">
               <h1>Social Marketing</h1>
             </div>
-            <div className="col-1">
+            <div className="col-2 cross">
               <i
                 onClick={() => {
                   goBack();
