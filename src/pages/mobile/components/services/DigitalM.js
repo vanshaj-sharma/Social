@@ -8,7 +8,6 @@ function DigitalM() {
   return (
     <>
       <div className="brand__box">
-        <h1 className="s_title">SERVICES</h1>
         <div className="s_brand">
           <div className="box">
             <h1>Digital Marketing</h1>

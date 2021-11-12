@@ -86,3 +86,25 @@ ul li:before {
     font-size: 1.2rem !important;
   }
 }
+
+@media only screen and (max-width: 720px) {
+  @keyframes animate__service {
+    from {
+      transform: translateX(-400px);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes subTitles__animations__services {
+    from {
+      transform: translateY(400px);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

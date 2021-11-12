@@ -8,7 +8,7 @@
   .brand__box {
     height: 100vh;
     overflow-y: scroll;
-    animation: animate__service ease-in-out 1.5s;
+    animation: subTitles__animations__services ease-in 1s;
   }
   .box {
     padding-right: 10px;

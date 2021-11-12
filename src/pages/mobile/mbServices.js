@@ -16,8 +16,8 @@ function MbServices() {
   };
   return (
     <>
+      <h1 className="s_title">SERVICES</h1>
       <div className="menu">
-        <h1 className="s_title">SERVICES</h1>
         <div className="s_headings">
           <h1
             onClick={() => {
