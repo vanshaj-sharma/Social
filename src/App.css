@@ -100,6 +100,15 @@ ul li:before {
       opacity: 1;
     }
   }
+  @keyframes animate__work {
+    from {
+      transform: translateX(400px);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   @keyframes subTitles__animations__services {
     from {

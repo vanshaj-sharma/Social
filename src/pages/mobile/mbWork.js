@@ -17,9 +17,11 @@ function MbWork() {
   };
   return (
     <>
-      <h1 className="s_title">OUR WORK</h1>
+      <h1 className="s_title" style={{ animation: "animate__work ease-in 1s" }}>
+        OUR WORK
+      </h1>
 
-      <div className="menu">
+      <div className="menu" style={{ animation: "animate__work ease-in 1s" }}>
         <div className="s_headings">
           <h1
             onClick={() => {
@@ -84,8 +86,9 @@ function MbWork() {
         {clicked === "1" && <Photography />}
         {clicked === "2" && <Videography />}
         {clicked === "3" && <PhotoEditing />}
-        {clicked === "4" && <BrandStrategy />}
-        {clicked === "5" && <SocialMedia />}
+        {clicked === "4" && <VideoEditing />}
+        {clicked === "5" && <BrandStrategy />}
+        {clicked === "6" && <SocialMedia />}
       </div>
     </>
   );
