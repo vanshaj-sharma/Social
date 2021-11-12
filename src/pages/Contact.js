@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/Contact.css";
 import { NavLink } from "react-router-dom";
+import MbContact from "./mobile/mbContact";
 
 function Contact() {
   const buttonToggle = () => {
@@ -71,7 +72,7 @@ function Contact() {
         </div>
       </div>
 
-      <div className="mobile"></div>
+      <div className="mobile">{MbContact()}</div>
     </>
   );
 }

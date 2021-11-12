@@ -5,7 +5,7 @@ function mbHome() {
   return (
     <>
       <div className="mbHome__box">
-        <NavLink className="top__left" to="/sevices">
+        <NavLink className="top__left" to="/contact">
           CONTACT US
         </NavLink>
         <NavLink className="top__right" to="/about">

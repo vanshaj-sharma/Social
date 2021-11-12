@@ -24,10 +24,11 @@
     display: none;
   }
   .menu {
-    animation: animate__service ease-in-out 1.5s;
+    animation: animate__service ease-in-out 0.8s;
   }
   @keyframes animate__service {
     from {
+      /* transform: translateY(60px); */
       opacity: 0;
     }
     to {
