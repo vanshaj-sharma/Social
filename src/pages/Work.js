@@ -2,6 +2,7 @@ import "./styles/Work.css";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import BrandLogo from "./components/works/BrandLogo";
+import MbWork from "./mobile/mbWork";
 
 function Work() {
   const [select, setSelected] = useState("0");
@@ -114,9 +115,7 @@ function Work() {
           <NavLink to="/about">ABOUT US</NavLink>
         </div>
       </div>
-      <div className="mobile">
-        <h1>Mobile Version</h1>
-      </div>
+      <div className="mobile">{MbWork()}</div>
     </>
   );
 }
