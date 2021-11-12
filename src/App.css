@@ -88,6 +88,9 @@ ul li:before {
 }
 
 @media only screen and (max-width: 720px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
   @keyframes animate__service {
     from {
       transform: translateX(-400px);

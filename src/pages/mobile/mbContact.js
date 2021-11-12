@@ -6,7 +6,13 @@ function MbContact() {
   };
   return (
     <>
-      <div classname="contact__menu">
+      <div
+        style={{
+          overflowY: "scroll",
+          height: "100vh",
+          animation: "animate__service ease-in-out 1s",
+        }}
+      >
         <h1 className="contact__title">CONTACT US</h1>
         <div className="contact__buttons">
           <button className="mb__button" onClick={() => buttonToggle()}>
