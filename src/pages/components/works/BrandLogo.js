@@ -8,16 +8,16 @@ function BrandLogo() {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <Card pdf={brandLogo} title="Brand" />
           </div>
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <Card pdf={gizmosity} title="Gizmosity" />
           </div>
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <Card pdf={glow} title="Glow" />
           </div>
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <Card pdf={uphaar} title="Uphaar" />
           </div>
         </div>
