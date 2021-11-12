@@ -12,7 +12,7 @@
   .s_headings {
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 
   .s_headings > h1 {
@@ -26,5 +26,7 @@
   }
   .menu {
     animation: animate__service ease-in-out 1s;
+    overflow-y: scroll;
+    height: 90vh;
   }
 }

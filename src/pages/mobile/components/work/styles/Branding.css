@@ -1,0 +1,19 @@
+.mb__brand_box {
+  overflow-y: scroll;
+  color: white;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  font-size: 1rem;
+  height: 80vh;
+  margin-right: 2rem;
+  animation: subTitles__animations__work ease-in-out 1.5s;
+}
+.mb__box {
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .mb__box > h1 {
+  padding-left: 2rem;
+} */

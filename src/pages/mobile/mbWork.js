@@ -1,5 +1,12 @@
 import { useState } from "react";
 import Branding from "./components/work/Branding.js";
+import BrandStrategy from "./components/work/BrandStrategy";
+import PhotoEditing from "./components/work/PhotoEditing";
+import Photography from "./components/work/Photography";
+import SocialMedia from "./components/work/SocialMedia";
+import VideoEditing from "./components/work/VideoEditing";
+import Videography from "./components/work/Videography";
+
 function MbWork() {
   const [clicked, setclicked] = useState("");
   const activate = () => {
@@ -10,7 +17,8 @@ function MbWork() {
   };
   return (
     <>
-      <h1 className="s_title">WORK</h1>
+      <h1 className="s_title">OUR WORK</h1>
+
       <div className="menu">
         <div className="s_headings">
           <h1
@@ -73,11 +81,11 @@ function MbWork() {
       </div>
       <div className="menu__content">
         {clicked === "0" && <Branding />}
-        {clicked === "1" && <Branding />}
-        {clicked === "2" && <Branding />}
-        {clicked === "3" && <Branding />}
-        {clicked === "4" && <Branding />}
-        {clicked === "5" && <Branding />}
+        {clicked === "1" && <Photography />}
+        {clicked === "2" && <Videography />}
+        {clicked === "3" && <PhotoEditing />}
+        {clicked === "4" && <BrandStrategy />}
+        {clicked === "5" && <SocialMedia />}
       </div>
     </>
   );

@@ -1,7 +1,4 @@
-import BrandLogo from "../../../components/works/BrandLogo";
-import "./styles/Branding.css";
-
-function Branding() {
+function PhotoEditing() {
   const goBack = () => {
     let menu = document.querySelector(".menu__deactivate");
     let menuContent = document.querySelector(".menu__content");
@@ -11,7 +8,7 @@ function Branding() {
   return (
     <div className="mb__brand_box">
       <div className="mb__box">
-        <h2>Branding</h2>
+        <h2>PhotoEditing Under Construction</h2>
         <i
           onClick={() => {
             goBack();
@@ -19,10 +16,7 @@ function Branding() {
           className=" text-center fas  fa-times"
         ></i>
       </div>
-      <div>
-        <BrandLogo />
-      </div>
     </div>
   );
 }
-export default Branding;
+export default PhotoEditing;

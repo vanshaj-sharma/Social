@@ -110,4 +110,14 @@ ul li:before {
       opacity: 1;
     }
   }
+
+  @keyframes subTitles__animations__work {
+    from {
+      transform: translateY(400px);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
