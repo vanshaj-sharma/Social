@@ -8,11 +8,13 @@ import InfluentialM from "./components/services/InfluentialM";
 import DigitalM from "./components/services/DigitalM";
 function MbServices() {
   const [select, setSelected] = useState("");
-  const activate = () => {
-    let menu = document.querySelector(".menu");
-    let menuContent = document.querySelector(".menu__content");
-    menu.classList.toggle("menu__deactivate");
-    menuContent.className = "menu__content";
+  const activate = (index) => {
+    let service__heads = document.querySelectorAll(".service__heads");
+    service__heads[index].classList.toggle("heading__deactivate");
+    for (let i = 0; i < 6; i++) {
+      if (i === index) continue;
+      service__heads[i].classList.remove("heading__deactivate");
+    }
   };
   return (
     <>
@@ -20,62 +22,69 @@ function MbServices() {
       <div className="menu">
         <div className="s_headings">
           <h1
+            className="service__heads"
             onClick={() => {
               setSelected("0");
-              activate();
+              activate(0);
             }}
           >
             BRANDING
           </h1>
+          {select === "0" && <Branding set={setSelected} option={0} />}
           <h1
+            className="service__heads"
             onClick={() => {
               setSelected("1");
-              activate();
+              activate(1);
             }}
           >
             INFLUENTIAL MARKETING
           </h1>
+          {select === "1" && <InfluentialM set={setSelected} option={1} />}
           <h1
+            className="service__heads"
             onClick={() => {
               setSelected("2");
-              activate();
+              activate(2);
             }}
           >
             DESIGNING
           </h1>
+          {select === "2" && <Designing set={setSelected} option={2} />}
+
           <h1
+            className="service__heads"
             onClick={() => {
               setSelected("3");
-              activate();
+              activate(3);
             }}
           >
             SOCIAL MARKETING
           </h1>
+          {select === "3" && <SocialM set={setSelected} option={3} />}
+
           <h1
+            className="service__heads"
             onClick={() => {
               setSelected("4");
-              activate();
+              activate(4);
             }}
           >
             PHOTOGRAPHY
           </h1>
+          {select === "4" && <PhotoVideo set={setSelected} option={4} />}
+
           <h1
+            className="service__heads"
             onClick={() => {
               setSelected("5");
-              activate();
+              activate(5);
             }}
           >
             DIGITAL MARKETING
           </h1>
+          {select === "5" && <DigitalM set={setSelected} option={5} />}
         </div>
-      </div>
-      <div className="menu__content">
-        {select === "0" && <Branding />}
-        {select === "1" && <InfluentialM />}
-        {select === "2" && <Designing />}
-        {select === "3" && <SocialM />}
-        {select === "4" && <PhotoVideo />}
-        {select === "5" && <DigitalM />}
       </div>
     </>
   );

@@ -2,12 +2,10 @@
   .s_brand {
     color: white;
     margin-left: 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: 1rem;
   }
   .brand__box {
-    height: 100vh;
-    overflow-y: scroll;
     animation: subTitles__animations__services ease-in 1s;
   }
   .box {

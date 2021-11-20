@@ -10,7 +10,7 @@ function MbContact() {
         style={{
           overflowY: "scroll",
           height: "100vh",
-          animation: "animate__service ease-in-out 1s",
+          animation: "animate__service ease-in-out 0.7s",
         }}
       >
         <h1 className="contact__title">CONTACT US</h1>

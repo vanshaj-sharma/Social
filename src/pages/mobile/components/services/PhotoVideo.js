@@ -1,9 +1,8 @@
-function PhotoVideo() {
+function PhotoVideo({ set, option }) {
   const goBack = () => {
-    let menu = document.querySelector(".menu__deactivate");
-    let menuContent = document.querySelector(".menu__content");
-    menu.className = "menu";
-    menuContent.className += " menu__deactivate";
+    let service__heads = document.querySelectorAll(".service__heads");
+    service__heads[option].classList.remove("heading__deactivate");
+    set("");
   };
   return (
     <>

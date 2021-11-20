@@ -12,7 +12,6 @@
   .s_headings {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
   }
 
   .s_headings > h1 {
@@ -21,7 +20,7 @@
     margin-left: 2rem;
     font-size: 1.2rem;
   }
-  .menu__deactivate {
+  .heading__deactivate {
     display: none;
   }
   .menu {

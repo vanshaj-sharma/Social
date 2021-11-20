@@ -164,7 +164,7 @@ ul li:before {
 
   @keyframes subTitles__animations__services {
     from {
-      transform: translateY(400px);
+      transform: translateY(-10px);
       opacity: 0;
     }
     to {
