@@ -7,7 +7,7 @@
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
-    animation: animate__service ease-in-out 1s;
+    animation: animate__service ease-in-out 0.7s;
   }
   .s_headings {
     display: flex;
@@ -25,7 +25,7 @@
     display: none;
   }
   .menu {
-    animation: animate__service ease-in-out 1s;
+    animation: animate__service ease-in-out 0.7s;
     overflow-y: scroll;
     height: 90vh;
   }

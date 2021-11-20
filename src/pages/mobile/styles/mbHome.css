@@ -2,6 +2,7 @@
   .mbHome__box {
     height: 100vh;
     background: linear-gradient(to top, #000000 50%, #ffffff 50%);
+    animation: home ease-in-out 1s;
   }
   .mbHome__box > a {
     color: #000000;

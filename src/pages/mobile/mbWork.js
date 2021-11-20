@@ -17,11 +17,14 @@ function MbWork() {
   };
   return (
     <>
-      <h1 className="s_title" style={{ animation: "animate__work ease-in 1s" }}>
+      <h1
+        className="s_title"
+        style={{ animation: "animate__work ease-in 0.7s" }}
+      >
         OUR WORK
       </h1>
 
-      <div className="menu" style={{ animation: "animate__work ease-in 1s" }}>
+      <div className="menu" style={{ animation: "animate__work ease-in 0.7s" }}>
         <div className="s_headings">
           <h1
             onClick={() => {
