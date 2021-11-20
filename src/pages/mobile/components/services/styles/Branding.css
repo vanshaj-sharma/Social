@@ -6,7 +6,7 @@
     font-size: 1rem;
   }
   .brand__box {
-    animation: subTitles__animations__services ease-in 1s;
+    animation: fading__animate ease-in 1s;
   }
   .box {
     padding-right: 10px;

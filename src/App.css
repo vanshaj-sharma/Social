@@ -98,11 +98,7 @@ ul li:before {
     }
     40% {
       filter: blur(8px);
-      opacity: 0.4;
-    }
-    60% {
-      filter: blur(4px);
-      opacity: 0.8;
+      opacity: 0.6;
     }
     100% {
       filter: blur(0px);
@@ -110,61 +106,29 @@ ul li:before {
     }
   }
   @keyframes animate__service {
-    /* from {
+    from {
+      background-color: white;
       transform: translateX(-400px);
-      opacity: 0;
+      filter: blur(4px);
     }
     to {
-      opacity: 1;
-    } */
-    0% {
-      filter: blur(10px);
-      opacity: 0.2;
-      transform: translateX(-400px);
-    }
-    40% {
-      filter: blur(8px);
-      opacity: 0.4;
-    }
-    60% {
-      filter: blur(4px);
-      opacity: 0.8;
-    }
-    100% {
       filter: blur(0px);
-      opacity: 1;
     }
   }
   @keyframes animate__work {
-    /* from {
+    from {
+      background-color: white;
       transform: translateX(400px);
-      opacity: 0;
+      filter: blur(4px);
     }
     to {
-      opacity: 1;
-    } */
-    0% {
-      filter: blur(10px);
-      opacity: 0.2;
-      transform: translateX(400px);
-    }
-    40% {
-      filter: blur(8px);
-      opacity: 0.4;
-    }
-    60% {
-      filter: blur(4px);
-      opacity: 0.8;
-    }
-    100% {
       filter: blur(0px);
-      opacity: 1;
     }
   }
 
-  @keyframes subTitles__animations__services {
+  @keyframes fading__animate {
     from {
-      transform: translateY(-10px);
+      filter: blur(2px);
       opacity: 0;
     }
     to {

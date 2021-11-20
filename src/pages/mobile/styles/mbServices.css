@@ -7,7 +7,7 @@
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
-    animation: animate__service ease-in-out 0.7s;
+    animation: animate__service ease-in-out 1s;
   }
   .s_headings {
     display: flex;
@@ -19,12 +19,13 @@
     margin-top: 3rem;
     margin-left: 2rem;
     font-size: 1.2rem;
+    animation: fading__animate ease-in-out 1s;
   }
   .heading__deactivate {
     display: none;
   }
   .menu {
-    animation: animate__service ease-in-out 0.7s;
+    animation: animate__service ease-in-out 1s;
     overflow-y: scroll;
     height: 90vh;
   }
