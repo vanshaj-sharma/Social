@@ -54,6 +54,25 @@
   display: flex;
   animation: toggleTransitionDown 0.6s;
 }
+.schedule__form {
+  margin-top: 10px;
+  display: none;
+  flex-direction: column;
+  max-width: 400px;
+  animation: toggleTransitionDown 0.6s;
+}
+.schedule__form > input {
+  height: 50px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.schedule__form > button {
+  margin-top: 10px;
+}
+.activate {
+  display: flex;
+}
+
 @keyframes toggleTransitionDown {
   from {
     opacity: 0;

@@ -4,6 +4,10 @@ function MbContact() {
     const toggler = document.querySelector(".mb__button__toggle");
     toggler.classList.toggle("mb__button__toggle__active");
   };
+  const schedule = () => {
+    const toggler = document.querySelector(".contact__form");
+    toggler.classList.toggle("contact__activate");
+  };
   return (
     <>
       <h1
@@ -37,7 +41,23 @@ function MbContact() {
               <i className="fab fa-2x fa-whatsapp"></i>
             </a>
           </div>
-          <button className="mb__button">SCHEDULE A CALL</button>
+          <button
+            className="mb__button"
+            onClick={() => {
+              schedule();
+            }}
+          >
+            SCHEDULE A CALL
+          </button>
+          <form action="" className="contact__form">
+            <input id="fname" type="text" placeholder="First Name" />
+            <input id="lname" type="text" placeholder="Last Name" />
+            <input id="meeting" type="date" />
+            <input id="meeting" type="time" />
+            <button className="btn btn-outline-light" type="submit">
+              Submit
+            </button>
+          </form>
           <button className="mb__button">GET DIRECTIONS</button>
         </div>
         <div className="contact__content">

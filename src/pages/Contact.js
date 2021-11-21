@@ -8,6 +8,10 @@ function Contact() {
     const toggler = document.querySelector(".button__toggle");
     toggler.classList.toggle("button__toggle__active");
   };
+  const schedule = () => {
+    const toggler = document.querySelector(".schedule__form");
+    toggler.classList.toggle("activate");
+  };
 
   return (
     <>
@@ -53,7 +57,23 @@ function Contact() {
                     <i className="fab fa-2x fa-whatsapp"></i>
                   </a>
                 </div>
-                <button className="button">SCHEDULE A CALL</button>
+                <button
+                  className="button"
+                  onClick={() => {
+                    schedule();
+                  }}
+                >
+                  SCHEDULE A CALL
+                </button>
+                <form action="" className="schedule__form">
+                  <input id="fname" type="text" placeholder="First Name" />
+                  <input id="lname" type="text" placeholder="Last Name" />
+                  <input id="meeting" type="date" />
+                  <input id="meeting" type="time" />
+                  <button className="btn btn-outline-light" type="submit">
+                    Submit
+                  </button>
+                </form>
                 <button className="button">GET DIRECTIONS</button>
               </div>
             </div>
