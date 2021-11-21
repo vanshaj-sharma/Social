@@ -9,89 +9,98 @@ import Videography from "./components/work/Videography";
 
 function MbWork() {
   const [clicked, setclicked] = useState("");
-  const activate = () => {
-    let menu = document.querySelector(".menu");
-    let menuContent = document.querySelector(".menu__content");
-    menu.classList.toggle("menu__deactivate");
-    menuContent.className = "menu__content";
+  const activate = (index) => {
+    let work__head = document.querySelectorAll(".work__head");
+    work__head[index].classList.toggle("heading__deactivate");
+    for (let i = 0; i < 7; i++) {
+      if (i === index) continue;
+      work__head[i].classList.remove("heading__deactivate");
+    }
   };
   return (
     <>
-      <h1
-        className="s_title"
-        style={{ animation: "animate__work ease-in 0.7s" }}
-      >
+      <h1 className="s_title" style={{ animation: "animate__work ease-in 1s" }}>
         OUR WORK
       </h1>
 
-      <div className="menu" style={{ animation: "animate__work ease-in 0.7s" }}>
+      <div className="menu" style={{ animation: "animate__work ease-in 1s" }}>
         <div className="s_headings">
           <h1
+            className="work__head"
             onClick={() => {
               setclicked("0");
-              activate();
+              activate(0);
             }}
           >
             BRANDING
           </h1>
+          {clicked === "0" && <Branding set={setclicked} option={0} />}
           <h1
+            className="work__head"
             onClick={() => {
               setclicked("1");
-              activate();
+              activate(1);
             }}
           >
             PHOTOGRAPHY
           </h1>
+          {clicked === "1" && <Photography set={setclicked} option={1} />}
+
           <h1
+            className="work__head"
             onClick={() => {
               setclicked("2");
-              activate();
+              activate(2);
             }}
           >
             VIDEOGRAPHY
           </h1>
+          {clicked === "2" && <Videography set={setclicked} option={2} />}
+
           <h1
+            className="work__head"
             onClick={() => {
               setclicked("3");
-              activate();
+              activate(3);
             }}
           >
             PHOTO EDITING
           </h1>
+          {clicked === "3" && <PhotoEditing set={setclicked} option={3} />}
+
           <h1
+            className="work__head"
             onClick={() => {
               setclicked("4");
-              activate();
+              activate(4);
             }}
           >
             VIDEO EDITING
           </h1>
+          {clicked === "4" && <VideoEditing set={setclicked} option={4} />}
+
           <h1
+            className="work__head"
             onClick={() => {
               setclicked("5");
-              activate();
+              activate(5);
             }}
           >
             BRAND STRATEGY
           </h1>
+          {clicked === "5" && <BrandStrategy set={setclicked} option={5} />}
+
           <h1
+            className="work__head"
             onClick={() => {
               setclicked("6");
-              activate();
+              activate(6);
             }}
           >
             SOCIAL MEDIA
           </h1>
+          {clicked === "6" && <SocialMedia set={setclicked} option={6} />}
         </div>
-      </div>
-      <div className="menu__content">
-        {clicked === "0" && <Branding />}
-        {clicked === "1" && <Photography />}
-        {clicked === "2" && <Videography />}
-        {clicked === "3" && <PhotoEditing />}
-        {clicked === "4" && <VideoEditing />}
-        {clicked === "5" && <BrandStrategy />}
-        {clicked === "6" && <SocialMedia />}
       </div>
     </>
   );

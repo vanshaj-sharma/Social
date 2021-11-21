@@ -1,9 +1,8 @@
-function PhotoEditing() {
+function PhotoEditing({ set, option }) {
   const goBack = () => {
-    let menu = document.querySelector(".menu__deactivate");
-    let menuContent = document.querySelector(".menu__content");
-    menu.className = "menu";
-    menuContent.className += " menu__deactivate";
+    let work__head = document.querySelectorAll(".work__head");
+    work__head[option].classList.remove("heading__deactivate");
+    set("");
   };
   return (
     <div className="mb__brand_box">

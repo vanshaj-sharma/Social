@@ -1,12 +1,11 @@
 .mb__brand_box {
-  overflow-y: scroll;
   color: white;
   margin-left: 2rem;
   margin-top: 3rem;
   font-size: 1rem;
-  height: 80vh;
+
   margin-right: 2rem;
-  animation: subTitles__animations__work ease-in-out 1.5s;
+  animation: fading__animate ease-in-out 1.5s;
 }
 .mb__box {
   padding-right: 10px;
