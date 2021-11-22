@@ -8,6 +8,10 @@ function MbContact() {
     const toggler = document.querySelector(".contact__form");
     toggler.classList.toggle("contact__activate");
   };
+  const getMbLocation = () => {
+    const toggler = document.querySelector(".mbGetLoc");
+    toggler.classList.toggle("contact__activate");
+  };
   return (
     <>
       <h1
@@ -22,7 +26,7 @@ function MbContact() {
       <div
         style={{
           overflowY: "scroll",
-          height: "100vh",
+          height: "90vh",
           animation: "animate__service ease-in-out 1s",
         }}
       >
@@ -58,7 +62,22 @@ function MbContact() {
               Submit
             </button>
           </form>
-          <button className="mb__button">GET DIRECTIONS</button>
+          <button
+            onClick={() => {
+              getMbLocation();
+            }}
+            className="mb__button"
+          >
+            GET DIRECTIONS
+          </button>
+          <iframe
+            title="map"
+            className="mbGetLoc"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212.3415232102146!2d74.85940156127025!3d31.621133611054443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39197b53dfebf8b5%3A0xcfceb25f0cf9e679!2sBala%20Ji%20Refrigeration%20Works!5e0!3m2!1sen!2sin!4v1637601579274!5m2!1sen!2sin"
+            style={{}}
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
         <div className="contact__content">
           <h3>ADDRESS</h3>
