@@ -12,7 +12,10 @@ function Contact() {
     const toggler = document.querySelector(".schedule__form");
     toggler.classList.toggle("activate");
   };
-
+  const getLocation = () => {
+    const toggler = document.querySelector(".getLoc");
+    toggler.classList.toggle("activate");
+  };
   return (
     <>
       <div className="desktop">
@@ -74,7 +77,24 @@ function Contact() {
                     Submit
                   </button>
                 </form>
-                <button className="button">GET DIRECTIONS</button>
+                <button
+                  onClick={() => {
+                    getLocation();
+                  }}
+                  className="button"
+                >
+                  GET DIRECTIONS
+                </button>
+                <iframe
+                  title="map"
+                  className="getLoc"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212.3415232102146!2d74.85940156127025!3d31.621133611054443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39197b53dfebf8b5%3A0xcfceb25f0cf9e679!2sBala%20Ji%20Refrigeration%20Works!5e0!3m2!1sen!2sin!4v1637601579274!5m2!1sen!2sin"
+                  width="400"
+                  height="280"
+                  style={{ border: 0, marginTop: "10px" }}
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
               </div>
             </div>
           </div>

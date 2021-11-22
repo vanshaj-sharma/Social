@@ -1,5 +1,5 @@
 import "./styles/mbHome.css";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/mbLogo.png";
 import { NavLink } from "react-router-dom";
 function mbHome() {
   return (
