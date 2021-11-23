@@ -1,4 +1,4 @@
-import BrandLogo from "../../../components/works/BrandLogo";
+import BrandLogo from "../work/helper/BrandLogo";
 import "./styles/Branding.css";
 
 function Branding({ set, option }) {
