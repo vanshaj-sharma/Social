@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Clientel from "./components/about/Clientel.js";
 import Team from "./components/about/Team.js";
 import We from "./components/about/We.js";
+import MbAbout from "./mobile/mbAbout.js";
 import "./styles/About.css";
 
 function About() {
@@ -93,7 +94,7 @@ function About() {
         </div>
       </div>
 
-      <div className="mobile"></div>
+      <div className="mobile">{MbAbout()}</div>
     </>
   );
 }
