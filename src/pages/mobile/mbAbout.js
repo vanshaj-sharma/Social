@@ -10,7 +10,7 @@ function MbAbout() {
     <>
       <h1
         style={{
-          animation: "animate__service ease-in-out 1s",
+          animation: "animate__about ease-in-out 1s",
         }}
         className="about__title"
       >

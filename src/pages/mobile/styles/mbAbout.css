@@ -2,6 +2,7 @@
   .about__page__mb {
     height: 90vh;
     overflow-y: scroll;
+    animation: animate__about ease-in-out 1s;
   }
   .about__title {
     margin-left: 2rem;

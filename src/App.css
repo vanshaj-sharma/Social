@@ -126,6 +126,17 @@ ul li:before {
     }
   }
 
+  @keyframes animate__about {
+    from {
+      background-color: white;
+      transform: translateX(400px);
+      filter: blur(4px);
+    }
+    to {
+      filter: blur(0px);
+    }
+  }
+
   @keyframes fading__animate {
     from {
       filter: blur(2px);
