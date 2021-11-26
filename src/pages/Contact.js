@@ -6,15 +6,30 @@ import MbContact from "./mobile/mbContact";
 function Contact() {
   const buttonToggle = () => {
     const toggler = document.querySelector(".button__toggle");
-    toggler.classList.toggle("button__toggle__active");
+    toggler.classList.toggle("activate");
+    //Radio button off property
+    const other1 = document.querySelector(".schedule__form");
+    const other2 = document.querySelector(".getLoc");
+    other1.classList.remove("activate");
+    other2.classList.remove("activate");
   };
   const schedule = () => {
     const toggler = document.querySelector(".schedule__form");
     toggler.classList.toggle("activate");
+    //Radio button off property
+    const other1 = document.querySelector(".button__toggle");
+    const other2 = document.querySelector(".getLoc");
+    other1.classList.remove("activate");
+    other2.classList.remove("activate");
   };
   const getLocation = () => {
     const toggler = document.querySelector(".getLoc");
     toggler.classList.toggle("activate");
+    //Radio button off property
+    const other1 = document.querySelector(".button__toggle");
+    const other2 = document.querySelector(".schedule__form");
+    other1.classList.remove("activate");
+    other2.classList.remove("activate");
   };
   return (
     <>

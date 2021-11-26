@@ -2,15 +2,30 @@ import "./styles/mbContact.css";
 function MbContact() {
   const buttonToggle = () => {
     const toggler = document.querySelector(".mb__button__toggle");
-    toggler.classList.toggle("mb__button__toggle__active");
+    toggler.classList.toggle("contact__activate");
+    //Radio button off property
+    const other1 = document.querySelector(".contact__form");
+    const other2 = document.querySelector(".mbGetLoc");
+    other1.classList.remove("contact__activate");
+    other2.classList.remove("contact__activate");
   };
   const schedule = () => {
     const toggler = document.querySelector(".contact__form");
     toggler.classList.toggle("contact__activate");
+    //Radio button off property
+    const other1 = document.querySelector(".mb__button__toggle");
+    const other2 = document.querySelector(".mbGetLoc");
+    other1.classList.remove("contact__activate");
+    other2.classList.remove("contact__activate");
   };
   const getMbLocation = () => {
     const toggler = document.querySelector(".mbGetLoc");
     toggler.classList.toggle("contact__activate");
+    //Radio button off property
+    const other1 = document.querySelector(".mb__button__toggle");
+    const other2 = document.querySelector(".contact__form");
+    other1.classList.remove("contact__activate");
+    other2.classList.remove("contact__activate");
   };
   return (
     <>
