@@ -8,7 +8,7 @@ import c6 from "../../../../pages/assets/clientel/c6.png";
 function Clientel() {
   return (
     <>
-      <div>
+      <div className="animation_box">
         <h4 style={{ marginTop: "0.5rem" }}>OUR CLIENTEL</h4>
         <div
           style={{ marginRight: "2rem" }}

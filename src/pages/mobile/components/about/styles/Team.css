@@ -22,3 +22,6 @@
   /* justify-content: center; */
   flex-wrap: wrap;
 }
+.animation_box {
+  animation: fading__animate ease-in-out 1s;
+}

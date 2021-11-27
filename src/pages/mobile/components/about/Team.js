@@ -26,7 +26,7 @@ function Team() {
     <>
       <div>
         <h4 style={{ marginTop: "0.5rem" }}>OUR TEAM</h4>
-        <div className="team__container__mb">
+        <div className="team__container__mb animation_box">
           <Photos />
           <Photos />
           <Photos />
