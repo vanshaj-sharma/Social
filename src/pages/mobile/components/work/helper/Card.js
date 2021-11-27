@@ -1,32 +1,23 @@
+import React, { useState } from "react";
 import "../../../../components/works/styles/Card.css";
-// import "pdfjs-dist";
+import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 
 function Card({ pdf, title }) {
-  // function displayPdf() {
-  //   pdfjsLib.getDocument(pdf).then((doc) => {
-  //     doc.getPage(1).then((page) => {
-  //       var myCanvas = document.getElementById("my_canvas");
-  //       var context = myCanvas.getContext("2d");
+  const [numPages, setNumPages] = useState(null);
 
-  //       var viewport = page.getViewport(1);
-  //       myCanvas.width = viewport.width;
-  //       myCanvas.height = viewport.height;
-
-  //       page.render({
-  //         canvasContext: context,
-  //         viewport: viewport,
-  //       });
-  //     });
-  //   });
-  // }
-
-  // displayPdf();
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
 
   return (
     <>
       <div className="Card">
         <div className="card__content">
-          <canvas id="my_canvas" style={{ height: "200px", width: "200px" }} />
+          {/* <canvas id="my_canvas" style={{ height: "200px", width: "200px" }} /> */}
+
+          <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+            <Page pageNumber={1} height="200" width="400" scale="1" />
+          </Document>
         </div>
         <div className="card__title d-flex justify-content-center">
           <h4>

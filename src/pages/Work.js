@@ -2,6 +2,7 @@ import "./styles/Work.css";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import BrandLogo from "./components/works/BrandLogo";
+import WPhotography from "./components/works/WPhotography";
 import MbWork from "./mobile/mbWork";
 
 function Work() {
