@@ -6,7 +6,8 @@ import Photography from "./components/work/Photography";
 import SocialMedia from "./components/work/SocialMedia";
 import VideoEditing from "./components/work/VideoEditing";
 import Videography from "./components/work/Videography";
-
+import { NavLink } from "react-router-dom";
+import backLogo from "../../pages/assets/social.png";
 function MbWork() {
   const [clicked, setclicked] = useState("");
   const activate = (index) => {
@@ -19,11 +20,31 @@ function MbWork() {
   };
   return (
     <>
-      <h1 className="s_title" style={{ animation: "animate__work ease-in 1s" }}>
-        OUR WORK
-      </h1>
-
-      <div className="menu" style={{ animation: "animate__work ease-in 1s" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          animation: "animate__work ease-in-out 1s",
+        }}
+      >
+        <h1 className="s_title">OUR WORK</h1>
+        <NavLink to="/">
+          <img
+            style={{
+              height: "30px",
+              width: "30px",
+              marginTop: "15px",
+              marginRight: "20px",
+            }}
+            src={backLogo}
+            alt=""
+          />
+        </NavLink>
+      </div>
+      <div
+        className="menu"
+        style={{ animation: "animate__work ease-in-out 1s" }}
+      >
         <div className="s_headings">
           <h1
             className="work__head"

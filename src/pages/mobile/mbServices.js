@@ -6,6 +6,8 @@ import SocialM from "./components/services/SocialM";
 import PhotoVideo from "./components/services/PhotoVideo";
 import InfluentialM from "./components/services/InfluentialM";
 import DigitalM from "./components/services/DigitalM";
+import { NavLink } from "react-router-dom";
+import backLogo from "../../pages/assets/social.png";
 function MbServices() {
   const [select, setSelected] = useState("");
   const activate = (index) => {
@@ -18,7 +20,27 @@ function MbServices() {
   };
   return (
     <>
-      <h1 className="s_title">SERVICES</h1>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          animation: "animate__service ease-in-out 1s",
+        }}
+      >
+        <h1 className="s_title">SERVICES</h1>
+        <NavLink to="/">
+          <img
+            style={{
+              height: "30px",
+              width: "30px",
+              marginTop: "15px",
+              marginRight: "20px",
+            }}
+            src={backLogo}
+            alt=""
+          />
+        </NavLink>
+      </div>
       <div className="menu">
         <div className="s_headings">
           <h1

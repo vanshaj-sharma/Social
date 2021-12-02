@@ -1,4 +1,6 @@
 import "./styles/mbContact.css";
+import { NavLink } from "react-router-dom";
+import backLogo from "../../pages/assets/social.png";
 function MbContact() {
   const buttonToggle = () => {
     const toggler = document.querySelector(".mb__button__toggle");
@@ -29,15 +31,27 @@ function MbContact() {
   };
   return (
     <>
-      <h1
+      <div
         style={{
+          display: "flex",
+          justifyContent: "space-between",
           animation: "animate__service ease-in-out 1s",
         }}
-        className="contact__title"
       >
-        CONTACT US
-      </h1>
-
+        <h1 className="contact__title">CONTACT US</h1>
+        <NavLink to="/">
+          <img
+            style={{
+              height: "30px",
+              width: "30px",
+              marginTop: "15px",
+              marginRight: "20px",
+            }}
+            src={backLogo}
+            alt=""
+          />
+        </NavLink>
+      </div>
       <div
         style={{
           overflowY: "scroll",
