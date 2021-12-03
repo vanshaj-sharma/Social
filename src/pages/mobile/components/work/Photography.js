@@ -1,3 +1,5 @@
+import PhotographyPdf from "./helper/PhotographyPdf";
+
 function Photography({ set, option }) {
   const goBack = () => {
     let work__head = document.querySelectorAll(".work__head");
@@ -6,14 +8,17 @@ function Photography({ set, option }) {
   };
   return (
     <div className="mb__brand_box">
-      <div className="mb__box">
-        <h2>Photography Under Construction</h2>
+      <div className="mb__box ml-4 mr-3">
+        <h2>Photography</h2>
         <i
           onClick={() => {
             goBack();
           }}
           className=" text-center fas  fa-times"
         ></i>
+      </div>
+      <div>
+        <PhotographyPdf />
       </div>
     </div>
   );

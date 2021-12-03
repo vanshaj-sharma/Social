@@ -2,7 +2,7 @@ import "./styles/Work.css";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import BrandLogo from "./components/works/BrandLogo";
-import WPhotography from "./components/works/WPhotography";
+import PhotographyPdf from "./components/works/PhotographyPdf";
 import MbWork from "./mobile/mbWork";
 
 function Work() {
@@ -95,12 +95,12 @@ function Work() {
               </div>
               <div className="col-6 col-lg-8 work__right">
                 {select === "0" && <BrandLogo />}
-                {select === "1" && <h1>hello2</h1>}
-                {select === "2" && <h1>hello3</h1>}
-                {select === "3" && <h1>hello4</h1>}
-                {select === "4" && <h1>hello5</h1>}
-                {select === "5" && <h1>hello6</h1>}
-                {select === "6" && <h1>hello7</h1>}
+                {select === "1" && <PhotographyPdf />}
+                {select === "2" && <h1>Coming Soon...</h1>}
+                {select === "3" && <h1>Coming Soon...</h1>}
+                {select === "4" && <h1>Coming Soon...</h1>}
+                {select === "5" && <h1>Coming Soon...</h1>}
+                {select === "6" && <h1>Coming Soon...</h1>}
               </div>
             </div>
           </div>

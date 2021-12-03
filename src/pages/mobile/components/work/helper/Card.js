@@ -16,7 +16,7 @@ function Card({ pdf, title }) {
           {/* <canvas id="my_canvas" style={{ height: "200px", width: "200px" }} /> */}
 
           <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-            <Page pageNumber={1} height="200" width="400" scale="1" />
+            <Page pageNumber={1} height="300" scale="0.7" />
           </Document>
         </div>
         <div className="card__title d-flex justify-content-center">
